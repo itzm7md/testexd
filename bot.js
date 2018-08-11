@@ -101,5 +101,5 @@ channel.guild.owner.send(`<@!${channelremover.id}>
   setTimeout(() => {
  channelr[channelremover.id].deleted = 0;
   },Otime)
-client.login("NDc3ODkzNzI1NTA3Mjg5MDk4.DlC-bw.eGu42KABWBkrhfQ2Cu2JPBelM1k");
+client.login("NDc3ODkzNzI1NTA3Mjg5MDk4.DlDAOg.VfNbMbaFkZN6CukOMUyCdy8vzJE");
 //CODES ReBeL
