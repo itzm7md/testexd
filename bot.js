@@ -209,28 +209,6 @@ client.on("message", (message) => {
         });
     }
 });
-client.on('message', message => {
-    if (message.content.startsWith("=avatar")) {
-if(!message.channel.guild) return;
-
-        var mentionned = message.mentions.users.first();
-
-    var client;
-      if(mentionned){
-          var client = mentionned;
-      } else {
-          var client = message.author;
-
-      }
-
-        const embed = new Discord.RichEmbed()
-                           .addField('Requested by:', "<@" + message.author.id + ">")
-
-        .setColor(000000)
-        .setFooter(اسم بوتك, 'ur bot image link')
-        .setImage(${client.avatarURL})
-      message.channel.sendEmbed(embed);
-    }
 });
 client.on("message", message => {
     var args = message.content.substring(prefix.length).split("-");
@@ -248,9 +226,6 @@ footer: {
   
 }
 }}).then(msg => {msg.delete(3000)});
-                  }
-
-
 });client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag} !`);
     client.user.setGame(`ps system !`,`www.twitch.tv/v5bz`);
