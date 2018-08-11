@@ -270,15 +270,5 @@ client.on('message', message => {
     
     }
     });
-client.on('message', msg => {
-    if (msg.content === '=help') {
-      msg.reply('**=bc للبرودكاست
-=mute للميوت
-=ban
-=kick
-=image لتغير الصوره 
-=name لتغير الاسم**');
-    }
-  });
 client.login("NDc3ODkzNzI1NTA3Mjg5MDk4.DlDAOg.VfNbMbaFkZN6CukOMUyCdy8vzJE");
 //CODES ReBeL
