@@ -231,16 +231,5 @@ footer: {
     console.log(`Logged in as ${client.user.tag} !`);
     client.user.setGame(`ps system !`,`www.twitch.tv/v5bz`);
   });
-client.on('message', msg => {
-    if (msg.content === '=help') {
-      msg.reply('**=bc للبرودكاست
-=mute للميوت
-=unmute لفك الميوت
-=kick لطرد عضو من السيرفر
-=ban لتبنيد عضو من السيرفر 
-=bc لارسال رساله لجميع اعضاء السيرفر **');
-    }
-  });
-      
 client.login("NDc3ODkzNzI1NTA3Mjg5MDk4.DlCxDA.7U8EjJSoX_l269JEP4aKZn0pHAs");
 //CODES ReBeL
