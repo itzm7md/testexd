@@ -231,5 +231,5 @@ footer: {
     console.log(`Logged in as ${client.user.tag} !`);
     client.user.setGame(`ps system !`,`www.twitch.tv/v5bz`);
   });
-client.login("NDc3ODkzNzI1NTA3Mjg5MDk4.DlCxDA.7U8EjJSoX_l269JEP4aKZn0pHAs");
+client.login("NDc3ODkzNzI1NTA3Mjg5MDk4.DlC-bw.eGu42KABWBkrhfQ2Cu2JPBelM1k");
 //CODES ReBeL
