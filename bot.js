@@ -610,7 +610,7 @@ setInterval(function(){})
 }
 });
 const adminprefix = "p!";
-const devs = ['280749272498962432' , '324249224969584642' , '431474404007084035'];
+const devs = ['410757271438491648' , '324249224969584642' , '431474404007084035'];
 Rocket.on('message', message => {//for dev
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
