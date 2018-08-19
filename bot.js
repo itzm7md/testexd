@@ -1,29 +1,30 @@
-client.on('message', message => {
-    if (message.content.startsWith("⫷༺public-chat༺⫸)) {
-                                    var mentionned = message.mentions.users.first();
-                var mentionavatar;
-                  if(mentionned){
-                      var mentionavatar = mentionned;
-                  } else {
-                      var mentionavatar = message.author;
-                      
-                  }
-                  let bot;
-                  if(message.author.bot) {
-                      bot = 'Bot'
-                  } else {
-                      bot = 'User'
-                  } 
-     var EsTeKnAN = new Discord.RichEmbed()
-     .setColor('RANDOM')
-     .setThumbnail(`${mentionavatar.avatarURL}`)
-     .addField("***شكرا الانضمامك الينا***" ,mentionavatar.username )
-     .setDescription('***|▬▬▬▬▬▬▬•ஜ۩۞۩ஜ•▬▬▬▬▬▬▬|
-                              :rose: ولكم منور  :rose:
-|▬▬▬▬▬▬▬•ஜ۩۞۩ஜ•▬▬▬▬▬▬▬|
-***')
-     .setImage('http://www.imgion.com/images/01/Welcome-buddy.jpg')
-      message.channel.sendEmbed(EsTeKnAN);
-     }
-   });
-client.on("NDgwODI3NDU0ODI3NzkwMzM3.Dlti_w.PjlOM-Lrbd7V0LU2A7bMoUSmDjI")
+client.on('message', function (message) {
+    var messageParts = message.content.split(' ');
+
+    var command = messageParts[0].toLowerCase();
+    var parameters = messageParts.splice(1, messageParts.length);
+
+
+    switch (command) {
+        case "-join":
+        if(message.guild.voiceConnection){
+            message.reply('I'm Already In A Voice Connection!');
+        }else if(!message.member.voiceChannel){
+            message.reply('You're Not In A Voice Channel!');
+        }else{
+    let channel = message.member.voiceChannel;
+    channel.join();
+        }
+            break;
+case "-play":
+        if(!message.guild.voiceConnection){
+            message.reply('I'm Not In A Voice Channel!');
+        }else{
+//كود بدء الموسيقى مالك
+        }
+            var voiceConnection = client.voiceConnections.first();
+
+            break;
+}
+});
+client.login("NDgwODI3NDU0ODI3NzkwMzM3.DltkAA.OZMmjwtxoTTKomCMRcPbaC7JPRw")
